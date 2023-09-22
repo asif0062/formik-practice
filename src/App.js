@@ -14,6 +14,7 @@ function App() {
         password: Yup.string().required("Please enter password"),
       }),
       onSubmit: (values) => {
+        alert(JSON.stringify(values))
         resetForm();
       },
     });
